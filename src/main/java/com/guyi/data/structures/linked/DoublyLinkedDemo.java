@@ -1,4 +1,4 @@
-package com.guyi.datastructures.linked;
+package com.guyi.data.structures.linked;
 
 /**
  * 演示双向链表
