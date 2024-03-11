@@ -21,21 +21,25 @@ public class QuickSort {
     /**
      * 快速排序算法实现
      *
-     * @param source    - 源数组
+     * @param source     - 源数组
      * @param startIndex - 排序起始位置
-     * @param endIndex  - 排序结束位置
+     * @param endIndex   - 排序结束位置
      */
     public static void quickSort(int[] source, int startIndex, int endIndex) {
         if (startIndex > endIndex) {
             return;
         }
-        int partition = partition(source, startIndex, endIndex);
-        quickSort(source, startIndex, (partition - 1));
-        quickSort(source, (partition + 1), endIndex);
+
+        // 分区
+        int lastPivotIndex = partition(source, startIndex, endIndex);
+
+        // 上一个基准元素位置已经确定, 后续排序就不需要考虑上一个基准元素了
+        quickSort(source, startIndex, (lastPivotIndex - 1));
+        quickSort(source, (lastPivotIndex + 1), endIndex);
     }
 
     /**
-     * 排序
+     * 分区, 本来操作的基准元素的最终位置将被确定。
      *
      * @param source     - 源数组
      * @param startIndex - 排序起始位置
