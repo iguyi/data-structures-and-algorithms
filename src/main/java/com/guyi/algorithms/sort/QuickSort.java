@@ -3,9 +3,10 @@ package com.guyi.algorithms.sort;
 import java.util.Arrays;
 
 /**
- * 快速排序算法的实现
+ * 快速排序算法的实现 - 递归方式
  *
  * @author 孤诣
+ * @see NonRecursiveQuickSort: 非递归实现方式
  */
 public class QuickSort {
     public static void main(String[] args) {
@@ -79,6 +80,7 @@ public class QuickSort {
             }
         }
 
+        // 将基准元素填入 pivotIndex 指向的位置
         source[pivotIndex] = pivot;
         return pivotIndex;
     }
