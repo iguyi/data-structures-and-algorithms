@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class QuickSort {
     public static void main(String[] args) {
         // 数据准备
-        int[] dataArray = new int[]{7, 0, 9, 5, 6, 8, 4, 3, 1, 2};
+        int[] dataArray = {7, 0, 9, 5, 6, 8, 4, 3, 1, 2};
         System.out.println("排序前: " + Arrays.toString(dataArray));
 
         // 利用快速排序算法进行排序
