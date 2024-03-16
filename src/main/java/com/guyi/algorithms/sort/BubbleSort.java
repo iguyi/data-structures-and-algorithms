@@ -3,7 +3,8 @@ package com.guyi.algorithms.sort;
 import java.util.Arrays;
 
 /**
- * 冒泡排序的实现
+ * 冒泡排序的实现<br/>
+ * 博客链接: http://t.csdnimg.cn/Mhxli
  *
  * @author 孤诣
  */
