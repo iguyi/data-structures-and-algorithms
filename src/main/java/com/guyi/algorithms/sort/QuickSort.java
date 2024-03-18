@@ -3,7 +3,8 @@ package com.guyi.algorithms.sort;
 import java.util.Arrays;
 
 /**
- * 快速排序算法的实现 - 递归方式
+ * 快速排序算法的实现 - 递归方式<br/>
+ * 博客链接: http://t.csdnimg.cn/fhFTu
  *
  * @author 孤诣
  * @see NonRecursiveQuickSort: 非递归实现方式
