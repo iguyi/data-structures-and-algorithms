@@ -30,7 +30,7 @@ public class InsertionSort {
 
         // 多少个元素就要比较多少轮
         for (int i = 0; i < source.length - 1; i++) {
-            // 寻找合适位置插入
+            // 寻找合适位置并插入
             for (int j = i + 1; j > 0; j--) {
                 // 如果前一个元素比后一个元素小, 本轮比较结束
                 if (source[j - 1] < source[j]) {
@@ -42,6 +42,38 @@ public class InsertionSort {
                 source[j] = source[j - 1];
                 source[j - 1] = temp;
             }
+        }
+    }
+
+    /**
+     * 插入排序算法的实现
+     *
+     * @param source 源数组
+     */
+    public static void insertionSort2(int[] source) {
+        if (source == null) {
+            return;
+        }
+
+        int length = source.length;
+
+        // 从数组第二个元素开始变量
+        for (int i = 1; i < length; i++) {
+            // 当前要插入的元素
+            int current = source[i];
+
+            // 有序部分最大元素的下标
+            int j = i - 1;
+
+            // 找到合适的插入位置
+            while (j >= 0 && source[j] > current) {
+                // 被比较元素后移
+                source[j + 1] = source[j];
+                j--;
+            }
+
+            // 插入当前元素到正确的位置
+            source[j + 1] = current;
         }
     }
 }
