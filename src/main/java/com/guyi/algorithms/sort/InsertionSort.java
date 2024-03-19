@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  * @author 孤诣
  */
-public class StraightInsertionSort {
+public class InsertionSort {
     public static void main(String[] args) {
         // 数据准备
         int[] dataArray = {7, 0, 9, 5, 6, 8, 4, 3, 1, 2};
