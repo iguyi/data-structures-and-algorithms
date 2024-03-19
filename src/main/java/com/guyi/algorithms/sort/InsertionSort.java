@@ -14,7 +14,7 @@ public class InsertionSort {
         System.out.println("排序前: " + Arrays.toString(dataArray));
 
         // 排序
-        straightInsertionSort(dataArray);
+        insertionSort(dataArray);
         System.out.println("排序后: " + Arrays.toString(dataArray));
     }
 
@@ -23,7 +23,7 @@ public class InsertionSort {
      *
      * @param source 源数组
      */
-    public static void straightInsertionSort(int[] source) {
+    public static void insertionSort(int[] source) {
         if (source == null) {
             return;
         }
