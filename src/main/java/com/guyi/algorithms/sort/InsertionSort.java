@@ -57,9 +57,9 @@ public class InsertionSort {
 
         int length = source.length;
 
-        // 从数组第二个元素开始变量
+        // 从数组第二个元素开始遍历
         for (int i = 1; i < length; i++) {
-            // 当前要插入的元素
+            // 当前待排序元素
             int current = source[i];
 
             // 有序部分最大元素的下标
@@ -67,12 +67,12 @@ public class InsertionSort {
 
             // 找到合适的插入位置
             while (j >= 0 && source[j] > current) {
-                // 被比较元素后移
+                // 比当前待排序元素大的有序元素后移
                 source[j + 1] = source[j];
                 j--;
             }
 
-            // 插入当前元素到正确的位置
+            // 将当前元素插入到正确位置
             source[j + 1] = current;
         }
     }
