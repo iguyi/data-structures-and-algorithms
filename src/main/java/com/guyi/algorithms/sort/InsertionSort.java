@@ -28,10 +28,10 @@ public class InsertionSort {
             return;
         }
 
-        // 多少个元素就要比较多少轮
-        for (int i = 0; i < source.length - 1; i++) {
+        // 从数组第二个元素开始遍历
+        for (int i = 1; i < source.length; i++) {
             // 寻找合适位置并插入
-            for (int j = i + 1; j > 0; j--) {
+            for (int j = i; j > 0; j--) {
                 // 如果前一个元素比后一个元素小, 本轮比较结束
                 if (source[j - 1] < source[j]) {
                     break;
