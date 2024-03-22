@@ -3,7 +3,8 @@ package com.guyi.algorithms.sort;
 import java.util.Arrays;
 
 /**
- * 插入排序的实现
+ * 插入排序的实现<br/>
+ * 博客链接：http://t.csdnimg.cn/nqdan
  *
  * @author 孤诣
  */
