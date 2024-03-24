@@ -9,12 +9,20 @@ import java.util.Arrays;
  */
 public class ShellSort {
     public static void main(String[] args) {
+        // 数据准备
         int[] array = {5, 0, 3, 9, 4, 1, 7, 6, 2, 8};
         System.out.println(Arrays.toString(array));
+
+        // 利用希尔排序对数据进行排序
         shellSort(array);
         System.out.println(Arrays.toString(array));
     }
 
+    /**
+     * 希尔排序算法的实现
+     *
+     * @param source 源数组
+     */
     public static void shellSort(int[] source) {
         if (source == null) {
             return;
