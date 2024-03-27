@@ -3,7 +3,8 @@ package com.guyi.algorithms.sort;
 import java.util.Arrays;
 
 /**
- * 希尔排序
+ * 希尔排序<br/>
+ * 博客链接: http://t.csdnimg.cn/m4Ku0
  *
  * @author 孤诣
  */
