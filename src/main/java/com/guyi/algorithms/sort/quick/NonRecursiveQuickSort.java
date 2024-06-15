@@ -1,4 +1,4 @@
-package com.guyi.algorithms.sort;
+package com.guyi.algorithms.sort.quick;
 
 import java.util.Arrays;
 import java.util.Stack;
